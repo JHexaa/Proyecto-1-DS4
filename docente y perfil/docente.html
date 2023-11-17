@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="docente.css">
+    <title>semestral</title>
+</head>
+
+<body>
+    <div class="body-main">
+        <div class="usuario-info">
+            <img src="img/foto.svg" alt="Foto de Usuario">
+            <div class="usuario-info-rol">
+                <h2><strong>Juan Perez</strong></h2>
+                <p>DOCENTE</p>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-perfil">
+                <a href="perfil.html">
+                    <img src="img/perfil.svg" alt="logo-perfil">
+                    <p>Perfil</p>
+                </a>
+            </div>
+            <div class="nav-proyectos">
+                <a href="docente.html">
+                    <img src="img/proyectos.svg" alt="logo-proyectos">
+                    <p>Proyectos Asesorados</p>
+                </a>
+            </div>
+            <div class="nav-logout">
+                <a href="../Login/Login.html">
+                    <img src="img/logout.svg" alt="logo-proyectos">
+                    <p>Cerrar Sesion</p>
+                </a>
+            </div>
+        </nav>
+
+        <div class="proy-asesorados">
+            <h1>Proyectos Asesorados</h1>
+            <div class="buscador">
+                <form class="input-buscador">
+                    <img src="img/lupa.svg" alt="lupa-buscador">
+                    <input type="text" placeholder="Buscar">
+                </form>
+                <button type="submit">Buscar</button>
+            </div>
+            <div class="container-tabla">
+                <table class="tabla-proyectos">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Estudiante</th>
+                            <th>Tipo de Proyecto</th>
+                            <th>Titulo de Proyecto</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Juan Perez</td>
+                            <td>TT</td>
+                            <td class="plegable">La mitología y su relación con la realidad en los pueblos originarios
+                            </td>
+                            <td><button id="estado-sust">Sustentacion</button></td>
+                        </tr>
+                        <tr class="plegable">
+                            <td>001</td>
+                            <td>Juan Perez</td>
+                            <td>TT</td>
+                            <td>La mitología y su relación con la realidad en los pueblos originarios</td>
+                            <td><button id="estado-eval">Evaluacion</button></td>
+                        </tr>
+                        <tr class="plegable">
+                            <td>001</td>
+                            <td>Juan Perez</td>
+                            <td>TT</td>
+                            <td>La mitología y su relación con la realidad en los pueblos originarios</td>
+                            <td><button id="estado-aprob">Aprobacion</button></td>
+                        </tr>
+                        <tr class="plegable">
+                            <td>001</td>
+                            <td>Juan Perez</td>
+                            <td>TT</td>
+                            <td>La mitología y su relación con la realidad en los pueblos originarios</td>
+                            <td><button id="estado-sust">Sustentacion</button></td>
+                        </tr>
+                        <tr class="plegable">
+                            <td>001</td>
+                            <td>Juan Perez</td>
+                            <td>TT</td>
+                            <td>La mitología y su relación con la realidad en los pueblos originarios</td>
+                            <td><button id="estado-sust">Sustentacion</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <section class="proxi-sust">
+            <h1>PROXIMAS SUSTENTACIONES</h1>
+            <div class="container-derecha">
+                <div class="Calendario">
+                    <div class="contenedor-botones">
+                        <p>Noviembre 2023</p>
+                        <button class="btn-izquierda"></button>
+                        <button class="btn-derecha"></button>
+                    </div>
+                    <ol>
+                        <li class="nombredia">Lun</li>
+                        <li class="nombredia">Mar</li>
+                        <li class="nombredia">Mie</li>
+                        <li class="nombredia">Jue</li>
+                        <li class="nombredia">Vie</li>
+                        <li class="nombredia">Sab</li>
+                        <li class="nombredia">Dom</li>
+
+                        <li class="primer-dia">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li class="sust-activo">15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                    </ol>
+                </div>
+                <hr>
+                <div class="container-sust">
+                    <img src="img/foto.svg">
+                    <div class="container-sust-info">
+                        <h1>La mitologia y relacion con la realidad en los pueblos originarios</h1>
+                        <p>de Juan Perez<br>
+                            miercoles, 15 noviembre, 15:00 horas</p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-logo">
+                <img src="img/utplogo.png" alt="LOGO UTP">
+                <p>
+                    Este sitio es administrado por la
+                    Facultad de Ingenieria en Sistemas Computacionales. Proyecto web
+                    donado por el grupo 1LS121 segundo semestre 2023.
+                </p>
+            </div>
+            <div class="footer-contacto">
+                <p>
+                    <strong>Contacto</strong><br>
+                    Avenida Universidad Tecnológica de Panamá, Vía Puente
+                    Centenario, Campus Metropolitano Dr. Victor Levi Sasso,
+                    Edificio No. 3, tercer piso. <br>
+                    Teléfono: (507) <br>
+                    E-mail: sindy.delosrios@utp.ac.pa
+                </p>
+            </div>
+            <div class="footer-redes">
+                <a href="https://www.facebook.com/paginautp"><img src="img/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/utppanama/"><img src="img/instagram.svg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/@UTPPanama507"><img src="img/youtube.svg" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/school/universidad-tecnol-gica-de-panam-/"><img src="img/linkedin.svg"
+                        alt="LinkedIn"></a>
+                <a href="https://twitter.com/utppanama"><img src="img/x.svg" alt="X-Twitter"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 - Universidad Tecnológica de Panamá</p>
+        </div>
+    </footer>
+</body>
+
+</html>

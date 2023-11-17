@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&family=Roboto:wght@500&display=swap');
+
+body {
+    margin: 0;
+}
+
+.body-main {
+    display: flex;
+    gap: 2%;
+    background-color: var(--blancoSuave);
+}
+
+:root {
+    --verdeClaro: #237C2C;
+    --verdeOscuro: #18561E;
+    --blanco: #FFFFFF;
+    --blancoSuave: #F6F6F6;
+    --grisOscuro: #444444;
+    --grisClaro: #777777;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-size: 2.5 rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 1.5 rem;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*NAVBAR*/
+
+.usuario-info {
+    position: absolute;
+    background-color: var(--blancoSuave);
+    width: 260px;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 20px;
+}
+
+.usuario-info-rol h2 {
+    color: var(--grisOscuro);
+    max-width: 100%;
+    margin: 5px;
+}
+
+.usuario-info-rol p {
+    color: var(--grisClaro);
+    max-width: 100%;
+    margin: 5px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--verdeOscuro);
+    width: 260px;
+    max-width: 100%;
+    color: white;
+    padding: 40px 20px;
+    height: 720px;
+}
+
+.nav-perfil {
+    margin-top: 200px;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-perfil a {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-perfil img {
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.nav-perfil:hover {
+    background-color: var(--verdeClaro);
+}
+
+.nav-proyectos {
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    background-color: var(--verdeClaro);
+}
+
+
+.nav-proyectos a {
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-proyectos img {
+    max-width: 100%;
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.nav-logout {
+    margin-top: 350px;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-logout a {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logout img {
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.nav-logout:hover {
+    background-color: var(--verdeClaro);
+}
+
+
+/*NAVBAR*/
+
+/*PROYECTOS ASESORADOS*/
+.proy-asesorados {
+    color: var(--grisOscuro);
+    width: 54%;
+}
+
+.buscador {
+    margin-top: 4%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buscador button {
+    background-color: var(--verdeOscuro);
+    padding: 10px 50px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    transition: all 0.4s ease;
+    background-color: var(--verdeClaro);
+}
+
+.input-buscador {
+    min-width: 50%;
+    padding: 10px;
+    border: 1px solid;
+    border-color: var(--grisClaro);
+    border-radius: 4px;
+    display: flex;
+    width: 600px;
+    height: 15px;
+}
+
+.input-buscador img {
+    padding: 0px 10px;
+}
+
+.input-buscador input {
+    background-color: var(--blancoSuave);
+    width: 600px;
+    outline: none;
+    border: none;
+}
+
+.container-tabla {
+    height: 620px;
+    margin-top: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--blanco);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+}
+
+.tabla-proyectos {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: var(--verdeOscuro);
+}
+
+thead tr th {
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 15px 15px;
+    text-align: center;
+    background-color: var(--verdeOscuro);
+    color: var(--blancoSuave);
+}
+
+tbody {
+    background-color: var(--blanco);
+    font-family: 'Montserrat';
+}
+
+tbody tr:hover {
+    background-color: var(--blancoSuave);
+}
+
+tbody tr td {
+    text-align: center;
+    padding: 10px;
+    color: var(--grisOscuro);
+}
+
+tbody tr td:nth-child(4) {
+    width: 30%;
+    height: 40px;
+    text-align: left;
+}
+
+#estado-sust {
+    background-color: var(--verdeClaro);
+    width: 80%;
+    padding: 14px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+}
+
+#estado-eval {
+    background-color: var(--grisOscuro);
+    width: 80%;
+    padding: 14px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+}
+
+#estado-aprob {
+    width: 80%;
+    background-color: var(--grisClaro);
+    padding: 14px 20px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+}
+
+/*PROYECTOS ASESORADOS*/
+
+
+
+/*PROXIMOS PROYECTOS*/
+.proxi-sust {
+    color: var(--grisOscuro);
+    width: 18%;
+}
+
+.sust-activo {
+    color: var(--blancoSuave);
+    background-color: var(--verdeClaro);
+}
+
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    color: var(--grisOscuro);
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Calendario p {
+    text-align: left;
+}
+
+.contenedor-botones {
+    color: var(--grisOscuro);
+    display: flex;
+    align-items: center;
+}
+
+.btn-izquierda {
+    margin-left: 85px;
+}
+
+.btn-izquierda,
+.btn-derecha {
+    color: var(--grisOscuro);
+    background-color: white;
+    font-size: 22px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-izquierda::before,
+.btn-derecha::before {
+    content: '\2039';
+    /* Código Unicode para "<" */
+}
+
+.btn-derecha::before {
+    content: '\203A';
+    /* Código Unicode para ">" */
+}
+
+
+.primer-dia {
+    grid-column-start: 4;
+}
+
+.nombredia {
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-sust {
+    display: flex;
+    gap: 10px;
+}
+
+.container-sust img {
+    margin-bottom: 25%;
+}
+
+.container-sust-info h1 {
+    color: var(--grisOscuro);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.container-sust-info p {
+    color: var(--grisClaro);
+    margin-top: 0px;
+}
+
+
+
+.container-derecha {
+    padding: 0 20px 20px 20px;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.5);
+    background-color: var(--blanco);
+    width: 100%;
+}
+
+/*PROXIMOS PROYECTOS*/
+
+footer {
+    background-color: var(--grisOscuro);
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 20%;
+    margin: 0 10px;
+}
+
+.footer-contacto {
+    margin: 0 140px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 80px;
+}
+
+.footer-redes img {
+    margin: 5px 2px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media screen and (min-width: 1980px) {
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        padding: 0 140px;
+    }
+
+    .footer-contacto {
+        margin: 0 200px;
+    }
+
+    .footer-redes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 180px;
+    }
+}

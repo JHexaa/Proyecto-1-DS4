@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&family=Roboto:wght@500&display=swap');
+
+body {
+    background-image: url(Imagen_fondo.png);
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+}
+
+.encabezado {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 35px;
+}
+
+.encabezado h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+
+.contenedor_passwordreset {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 10%
+}
+
+.contenedor_passwordreset h2 {
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.contenedor_input {
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.entrada {
+    height: 60px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 3px;
+    width: 400px;
+
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #237C2C;
+    border-radius: 40px;
+    color: white;
+    font-size: 20px;
+    padding-left: 18px;
+    padding-right: 20px;
+}
+
+button:hover {
+    color: white;
+    background-color: #444444;
+}
+
+
+:root {
+    --verdeClaro: #237C2C;
+    --verdeOscuro: #18561E;
+    --blanco: #FFFFFF;
+    --blancoSuave: #F6F6F6;
+    --grisOscuro: #444444;
+    --grisClaro: #777777;
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: var(--grisOscuro);
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 20%;
+    margin: 0 10px;
+}
+
+.footer-contacto {
+    margin: 0 140px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 80px;
+}
+
+.footer-redes img {
+    margin: 5px 2px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media screen and (min-width: 1980px) {
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        padding: 0 140px;
+    }
+
+    .footer-contacto {
+        margin: 0 200px;
+    }
+
+    .footer-redes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 180px;
+    }
+}

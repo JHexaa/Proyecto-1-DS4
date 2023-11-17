@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <img class="logoutp-header" src="utplogo.png" alt="" width="150px" height="150px">
+        <h2 class="titulo-utp">
+            UTP
+        </h2>
+        <div class="pagina-principal">
+            <button onclick="window.location.href='pagina_principal.html'">Página Principal</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Más &#9660;</button>
+            <div class="dropdown-content">
+                <a href="#">Opción 1</a>
+                <a href="#">Opción 2</a>
+                <a href="#">Opción 3</a>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="section-formulario">
+        <br>
+        <div class="formulario">
+            <h2>
+                Registro De Usuario
+            </h2>
+            <hr class="separacion">
+            <form>
+                <label for="nombreUsuario">Nombre de Usuario:</label>
+                <input type="text" id="nombreUsuario" name="nombreUsuario" required
+                    placeholder="Ingrese su nombre de usuario ">
+
+                <label for="correoElectronico">Correo Electrónico:</label>
+                <input type="email" id="correoElectronico" name="correoElectronico" required
+                    placeholder="nombre.apellido@utp.ac.pa">
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required placeholder="Ingrese su contraseña">
+            </form>
+            <br>
+            <h2>
+                Identificacion
+            </h2>
+            <hr class="separacion">
+            <form>
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" required placeholder="00-0000-0000">
+            </form>
+            <br>
+            <br>
+            <a href="../Login/Login.html"><button type="submit">Registrarse</button></a>
+            <a href="../Login/Login.html"><button type="button" class="cancel">Cancelar</button></a>
+
+        </div>
+        <br>
+    </div>
+</body>
+<br>
+<footer>
+    <div class="footer-main">
+        <div class="footer-logo">
+            <img src="img/utplogo.png" alt="LOGO UTP">
+            <p>
+                Este sitio es administrado por la
+                Facultad de Ingenieria en Sistemas Computacionales. Proyecto web
+                donado por el grupo 1LS121 segundo semestre 2023.
+            </p>
+        </div>
+        <div class="footer-contacto">
+            <p>
+                <strong>Contacto</strong><br>
+                Avenida Universidad Tecnológica de Panamá, Vía Puente
+                Centenario, Campus Metropolitano Dr. Victor Levi Sasso,
+                Edificio No. 3, tercer piso. <br>
+                Teléfono: (507) <br>
+                E-mail: sindy.delosrios@utp.ac.pa
+            </p>
+        </div>
+        <div class="footer-redes">
+            <a href="https://www.facebook.com/paginautp"><img src="img/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/utppanama/"><img src="img/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@UTPPanama507"><img src="img/youtube.svg" alt="Youtube"></a>
+            <a href="https://www.linkedin.com/school/universidad-tecnol-gica-de-panam-/"><img src="img/linkedin.svg"
+                    alt="LinkedIn"></a>
+            <a href="https://twitter.com/utppanama"><img src="img/x.svg" alt="X-Twitter"></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023 - Universidad Tecnológica de Panamá</p>
+    </div>
+</footer>
+
+</html>

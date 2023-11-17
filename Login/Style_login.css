@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&family=Roboto:wght@500&display=swap');
+
+
+:root {
+    --verdeClaro: #237C2C;
+    --verdeOscuro: #18561E;
+    --blanco: #FFFFFF;
+    --blancoSuave: #F6F6F6;
+    --grisOscuro: #444444;
+    --grisClaro: #777777;
+    --fuente: Arial, Helvetica, sans-serif;
+}
+
+/*Estilo general*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Roboto';
+    font-size: 4.7rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*Fuentes del login / registro*/
+
+.titulo {
+    font-size: 3.5rem;
+}
+
+.titulo_re {
+    font-size: 3.5rem;
+    color: var(--blanco);
+}
+
+
+/*Header*/
+
+header {
+    background-color: var(--verdeOscuro);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.img_logo_header {
+    width: 70px;
+    padding-left: 20px;
+}
+
+
+/*Login*/
+
+.body_login {
+    background-image: url(img/Login_img.png);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+
+}
+
+.form_contenedor_prin {
+    background-color: var(--blanco);
+    width: 65%;
+    height: 60vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor_uni {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Login-Inicio de sesion*/
+
+.contenedor_inicio_sesion {
+    background-color: var(--blanco);
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 100%;
+    height: 45vh;
+}
+
+.campo_form {
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.pass {
+    padding: 10px 40px;
+    color: var(--grisClaro);
+    font-size: 1.2rem;
+    font-family: var(--fuente);
+
+}
+
+.boton_login_in {
+    text-decoration: none;
+    padding: 12px 40px;
+    background-color: var(--verdeClaro);
+    color: var(--blanco);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-family: var(--fuente);
+    border: none;
+}
+
+.boton_login_in:hover {
+    background-color: var(--grisClaro);
+    color: var(--blanco);
+}
+
+/*Login-Registro*/
+
+.contenedor_registro {
+    background-color: var(--verdeClaro);
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_login_re {
+    background-color: var(--blanco);
+    font-size: 1.2rem;
+    color: var(--grisOscuro);
+    padding: 12px 40px;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    margin: 20px 0;
+    font-family: var(--fuente);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.boton_login_re:hover {
+    background-color: var(--grisClaro);
+    color: var(--blanco);
+
+}
+
+.texto_re {
+    color: var(--blanco);
+}
+
+.link_re {
+    color: var(--blanco);
+}
+
+.contenedor_login_olvi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.link_recupe {
+    color: var(--grisOscuro);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--fuente);
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--grisOscuro);
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 20%;
+    margin: 0 10px;
+}
+
+.footer-contacto {
+    margin: 0 140px;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 80px;
+}
+
+.footer-redes img {
+    margin: 5px 2px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+@media screen and (min-width: 1980px) {
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        padding: 0 140px;
+    }
+
+    .footer-contacto {
+        margin: 0 200px;
+    }
+
+    .footer-redes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 180px;
+    }
+}
